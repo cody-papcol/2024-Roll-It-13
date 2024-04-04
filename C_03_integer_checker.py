@@ -1,20 +1,24 @@
+# Checks that users enter an integer that is more than 13
+def int_check():
+    while True:
 
-while True:
+        # Defining error var
+        error = 'Please enter an integer that is 13 or more'
 
-    # Defining error var
-    error = 'Please enter an integer that is 13 or more'
+        # Getting input from user
+        try:
+            response = int(input('Enter an integer: '))
 
-    # Getting input from user
-    try:
-        my_num = int(input('Enter an integer: '))
+            # Checks if input integer is in acceptable range (integer is more than 13)
+            if response < 13:
+                print(error)
 
-        # Checks if input integer is in acceptable range (integer is more than 13)
-        if my_num < 13:
+            else:
+                return response
+
+        except ValueError:
             print(error)
 
-        else:
-            print('Your number is', my_num)
 
-    except ValueError:
-        print(error)
-
+target_score = int_check()
+print(target_score)
