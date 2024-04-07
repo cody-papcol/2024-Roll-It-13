@@ -11,6 +11,7 @@ def yes_no(question):
         else:
             print('please enter yes / no')
 
+
 # defines the instructions
 def instructions():
     print('''
@@ -36,6 +37,7 @@ def instructions():
     
     ''')
 
+
 # Checks that users enter an integer that is more than 13
 def int_check():
     while True:
@@ -57,10 +59,12 @@ def int_check():
         except ValueError:
             print(error)
 
+
 # prints the name of the game
 print()
 print('🎲🎲 Roll It 13 🎲🎲')
 print()
+
 
 # checks if user wants to see instructions, if yes then prints instructions, if no then program continues
 want_instructions = yes_no('Do you want to read the instructions? ')
