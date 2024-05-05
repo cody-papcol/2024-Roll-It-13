@@ -11,13 +11,14 @@ def yes_no(question):
         else:
             print('please enter yes / no')
 
+
 # defines the instructions
 def instructions():
     print('''
     
     **** Instructions ****
     
-    To being, decide on a score goal (eg: The first on to get a score of 50 wins).
+    To begin, decide on a score goal (eg: The first on to get a score of 50 wins).
     
     For each round of the game, you win points by rolling dice.
     The winner of the round is the one who gets 13 (or slightly less).
